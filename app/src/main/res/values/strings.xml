@@ -13,5 +13,7 @@
     <string name="check_box_mayonnaise">Mayonnaise</string>
     <string name="check_box_pickle_relish">Pickle relish</string>
     <string name="check_box_guacamole">Guacamole</string>
+    <string name="button_place_order">Place Order</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
 
 </resources>

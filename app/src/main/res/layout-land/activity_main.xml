@@ -103,13 +103,13 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center|bottom"
-        android:background="@color/blue_color">
+        android:background="@color/green_color">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_place_order"
-            android:id="@+id/button_place_order" />
+            android:text="New Button"
+            android:id="@+id/button" />
     </LinearLayout>
 
 </LinearLayout>

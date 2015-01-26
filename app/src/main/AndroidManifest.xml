@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ConfirmationActivity"
+            android:label="@string/title_activity_confirmation" >
+        </activity>
     </application>
 
 </manifest>
