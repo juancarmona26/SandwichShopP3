@@ -8,5 +8,10 @@
     <string name="radio_button_wheat">Wheat</string>
     <string name="radio_button_white">White</string>
     <string name="radio_button_rye">Rye</string>
+    <string name="check_box_ketchup">Ketchup</string>
+    <string name="check_box_mustard">Mustard</string>
+    <string name="check_box_mayonnaise">Mayonnaise</string>
+    <string name="check_box_pickle_relish">Pickle relish</string>
+    <string name="check_box_guacamole">Guacamole</string>
 
 </resources>

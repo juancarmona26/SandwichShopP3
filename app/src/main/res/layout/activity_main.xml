@@ -12,7 +12,7 @@
         android:id="@+id/text_view_activity" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -21,7 +21,8 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -44,6 +45,63 @@
                 android:id="@+id/radio_button_rye"
                 android:checked="false" />
         </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_ketchup"
+            android:id="@+id/check_box_ketchup"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_mustard"
+            android:id="@+id/checkBox2"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_mayonnaise"
+            android:id="@+id/checkBox3"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_pickle_relish"
+            android:id="@+id/checkBox"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box_guacamole"
+            android:id="@+id/checkBox4"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
