@@ -19,5 +19,10 @@
     <string name="button_confirmation_cancel">Cancel</string>
     <string name="text_view_these_are_the_condimentes">These are the condiments</string>
     <string name="text_view_this_bread_selected">This is the bread selected</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_view_selection">Enter a number of sandwich to make (Up to five).</string>
+    <string name="edit_text_hint">EditText</string>
+    <string name="button_go_ahead">Go Ahead!</string>
 
 </resources>
