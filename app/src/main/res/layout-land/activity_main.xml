@@ -66,7 +66,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/check_box_mustard"
-            android:id="@+id/checkBox2"
+            android:id="@+id/check_box_Mustard"
             android:checked="false"
             android:gravity="center" />
 
@@ -74,7 +74,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/check_box_mayonnaise"
-            android:id="@+id/checkBox3"
+            android:id="@+id/check_box_mayonnaise"
             android:checked="false"
             android:gravity="center" />
 
@@ -82,16 +82,16 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/check_box_pickle_relish"
-            android:id="@+id/checkBox"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:gravity="center" />
+            android:gravity="center"
+            android:id="@+id/check_box_pickle_relish" />
 
         <CheckBox
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/check_box_guacamole"
-            android:id="@+id/checkBox4"
+            android:id="@+id/check_box_guacamole"
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:gravity="center" />
@@ -108,8 +108,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:text="@string/button_place_order"
+            android:id="@+id/button_place_order" />
     </LinearLayout>
 
 </LinearLayout>
