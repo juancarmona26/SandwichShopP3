@@ -15,9 +15,5 @@
     <string name="check_box_guacamole">Guacamole</string>
     <string name="button_place_order">Place Order</string>
     <string name="title_activity_confirmation">ConfirmationActivity</string>
-    <string name="button_confirmation_ok">Ok</string>
-    <string name="button_confirmation_cancel">Cancel</string>
-    <string name="text_view_these_are_the_condimentes">These are the condiments</string>
-    <string name="text_view_this_bread_selected">This is the bread selected</string>
 
 </resources>
