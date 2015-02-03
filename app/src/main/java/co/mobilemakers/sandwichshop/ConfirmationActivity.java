@@ -14,12 +14,8 @@ import java.util.List;
 
 public class ConfirmationActivity extends ActionBarActivity {
 
-    View view;
     public static final String LOG_TAG = ConfirmationActivity.class.getName();
-    private String mBread;
-//    private List<String> mSelectedCondiments;
     private TextView mTextViewSandwichOrder;
-    private TextView mTextViewCondimentsSelected;
     private Button mButtonOk;
     private Button mButtonCancel;
     private OrderFormFragment.SandwichOrder sandwichOrder;
@@ -30,13 +26,19 @@ public class ConfirmationActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmation);
         Log.d(LOG_TAG, "On create Confirmation");
-//        mBread = getIntent().getStringExtra("bread");
-//        mSelectedCondiments = (List<String>) getArguments().getSerializable("condiments");
         sandwichOrder = getIntent().getExtras().getParcelable("parcelableSandwichOrders");
-
         sandwichOrders = sandwichOrder.getSandwichOrder();
         StringBuffer orderToDisplay = new StringBuffer();
+        organizeSandwichOrderStrings(orderToDisplay);
+        prepareViewsToShowConfirmation();
+        setValuesToTextsViews(orderToDisplay);
+        setButtonConfirmationEvents();
+//        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar_green);
+//
+//        setSupportActionBar(toolbar);
+    }
 
+    private void organizeSandwichOrderStrings(StringBuffer orderToDisplay) {
         for(int i =0; i <sandwichOrders.size(); i ++){
             orderToDisplay.append("Sandwich ").append(i+1).append(": ");
             for (int j= 0; j < sandwichOrders.get(i).size(); j++) {
@@ -44,9 +46,6 @@ public class ConfirmationActivity extends ActionBarActivity {
             }
             orderToDisplay.append(" \n\n");
         }
-        prepareViewsToShowConfirmation();
-        setValuesToTextsViews(orderToDisplay);
-        setButtonConfirmationEvents();
     }
 
     private void prepareViewsToShowConfirmation(){
@@ -79,7 +78,5 @@ public class ConfirmationActivity extends ActionBarActivity {
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState);
-        Log.d("Prueba", "En activiti saving instance");
-
     }
 }

@@ -8,6 +8,12 @@
     android:gravity="center"
     android:orientation="vertical">
 
+
+    <include layout="@layout/toolbar_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
