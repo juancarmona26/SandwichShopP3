@@ -24,5 +24,6 @@
     <string name="text_view_selection">Enter a number of sandwich to make (Up to five).</string>
     <string name="edit_text_hint">EditText</string>
     <string name="button_go_ahead">Go Ahead!</string>
+    <string name="text_view_order">This is your sandwich(es) order</string>
 
 </resources>

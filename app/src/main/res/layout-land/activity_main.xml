@@ -103,7 +103,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center|bottom"
-        android:background="@color/green_color">
+        android:background="@color/blue_color">
 
         <Button
             android:layout_width="wrap_content"

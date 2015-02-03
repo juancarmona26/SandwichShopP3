@@ -12,6 +12,12 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_container);
+        goToAmountFragmentSelection();
+    }
+
+    private void goToAmountFragmentSelection() {
+        AmountFragment alleyFragment = new AmountFragment();
+        getFragmentManager().beginTransaction().replace(R.id.main_container_layout, alleyFragment).addToBackStack(null).commit();
     }
 
 
@@ -35,5 +41,15 @@ public class MainActivity extends FragmentActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

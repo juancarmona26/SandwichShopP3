@@ -2,12 +2,16 @@ package co.mobilemakers.sandwichshop;
 
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class AmountFragment extends Fragment {
@@ -41,8 +45,24 @@ public class AmountFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-
-
+                int numberOfSandwiches;
+                if(!TextUtils.isEmpty(mEditTextAmountOfSandwiches.getText())) {
+                    numberOfSandwiches = Integer.parseInt(mEditTextAmountOfSandwiches.getText().toString());
+                    if(numberOfSandwiches >= 1 && numberOfSandwiches  <= 5) {
+                        OrderFormFragment orderFormFragment = new OrderFormFragment();
+                        Bundle arguments = new Bundle();
+                        arguments.putInt("numberOfSandwiches",numberOfSandwiches);
+                        orderFormFragment.setArguments(arguments);
+                        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                        transaction.replace(R.id.main_container_layout, orderFormFragment);
+                        transaction.addToBackStack(null);
+                        transaction.commit();
+                    } else {
+                        Toast.makeText(getActivity(), "Enter until five Sandwiches", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(getActivity(), "Please Select number of Sandwiches, (Until Five)", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
